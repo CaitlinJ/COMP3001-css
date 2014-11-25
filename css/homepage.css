@@ -1,0 +1,39 @@
+#wrapper{
+	margin-top: 30px;
+	font-family:"Helvetica", Arial, Helvetica, sans-serif;
+}
+
+#title{
+	margin-top:-15px;
+	margin-left:-15px;
+}
+
+#date{
+	margin-top:-15px;
+}
+
+#weather{
+	margin-top: -15px;
+
+}
+
+#activityTable{
+	width: 450px;
+}
+
+#map{
+	width:450px;
+}
+
+#picker{
+	margin-top: 10px;
+}
+
+#table{
+	margin-top: 10px;
+}
+
+.panel-body{
+	overflow: scroll;
+	height: 400px;
+}
