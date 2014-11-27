@@ -23,11 +23,10 @@ margin-right: 8px;
 
 #sidebar{
 	margin-right: 20px;
-	margin-top: 18px;
-	margin-bottom: -35px;
 }
 #text{
-	border-right:#777;
-	color:#777;
+	border:solid;
+	border-right:#333;
+	
 }
 
