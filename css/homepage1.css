@@ -16,20 +16,17 @@ height: 100%;
 }
 
 #timepicker{
-margin-top:8px;
+margin-top: 8px;
 margin-bottom: -8px;
 margin-right: 8px;
 }
 
 #sidebar{
-	padding: 15px 0 0 0;
-	float:right;
+	margin-right: 20px;
+	margin-top: 18px;
+	margin-bottom: -35px;
 }
-
 #text{
-	float:right;
-	margin-right: 1em;
-	padding-right:1em;
 	border-right:#777;
 	color:#777;
 }
