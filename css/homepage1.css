@@ -22,11 +22,10 @@ margin-right: 8px;
 }
 
 #sidebar{
-	margin-right: 20px;
+	margin-right: -10px;
 }
-#text{
-	border:solid;
-	border-right:#333;
+a.text{
+
 	
 }
 
