@@ -1,3 +1,7 @@
+img{
+margin-top: 5px;
+}
+
 
 #mapwrap {
 width: 100%;
@@ -9,15 +13,12 @@ margin-left: 15px;
 
 #timepicker{
    margin-bottom: -8px;
-   margin-top: 3px;
+   margin-top: -34px;
 margin-right: 8px;
 }
 
 .list{
-    margin-top: 18px;
-margin-bottom: -30px;
-
-border-right:1px solid #777; 
+    margin-top: 12px;
 }
 
 table,th,td{
@@ -81,6 +82,7 @@ table #time{
 
 .navbar-brand{
     position: fixed;
+    margin-left: -20px;
 }
 
 .sidebar-nav {
@@ -151,3 +153,50 @@ table #time{
         margin-right: 0;
     }
 }
+
+.onoffswitch {
+    position: relative; width: 69px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 0px solid #999999; border-radius: 14px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 9px;
+    background-color: #2451E3; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 9px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 15px; margin: 6px;
+    background: #FFFFFF;
+    border: 0px solid #999999; border-radius: 14px;
+    position: absolute; top: 0; bottom: 0; right: 38px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+} 
