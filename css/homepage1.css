@@ -13,12 +13,12 @@ margin-left: 15px;
 
 #timepicker{
    margin-bottom: -8px;
-   margin-top: -34px;
+   margin-top: -39px;
 margin-right: 8px;
 }
 
 .list{
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 table,th,td{
@@ -163,7 +163,7 @@ table #time{
 }
 .onoffswitch-label {
     display: block; overflow: hidden; cursor: pointer;
-    border: 0px solid #999999; border-radius: 14px;
+    border: 0px solid #999999; border-radius: 5px;
 }
 .onoffswitch-inner {
     display: block; width: 200%; margin-left: -100%;
@@ -171,14 +171,14 @@ table #time{
     -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
-    display: block; float: left; width: 50%; height: 27px; padding: 0; line-height: 27px;
+    display: block; float: left; width: 50%; height: 34px; padding: 0; line-height: 34px;
     font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 .onoffswitch-inner:before {
     content: "ON";
     padding-left: 9px;
-    background-color: #2451E3; color: #FFFFFF;
+    background-color: #EEEEEE; color: #999999;
 }
 .onoffswitch-inner:after {
     content: "OFF";
@@ -189,7 +189,7 @@ table #time{
 .onoffswitch-switch {
     display: block; width: 15px; margin: 6px;
     background: #FFFFFF;
-    border: 0px solid #999999; border-radius: 14px;
+    border: 0px solid #999999; border-radius: 5px;
     position: absolute; top: 0; bottom: 0; right: 38px;
     -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
     -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
