@@ -1,31 +1,153 @@
+
 #mapwrap {
 width: 100%;
 top: 48px;
-left: 0;
-bottom: 0;
-right: 0;
-float: left;
 position: fixed;
-
+bottom: 0;
+margin-left: 15px;
             }
 
-#map {
-float: left;
-width: 100%;
-height: 100%;
-}
-
 #timepicker{
-margin-top: 8px;
-margin-bottom: -8px;
+   margin-bottom: -8px;
+   margin-top: 3px;
 margin-right: 8px;
 }
 
-#sidebar{
-	margin-right: -10px;
-}
-a.text{
+.list{
+    margin-top: 18px;
+margin-bottom: -30px;
 
-	
+border-right:1px solid #777; 
 }
 
+table,th,td{
+border: hidden;
+color: #777;
+}
+
+tr{
+    height: 50px;
+}
+
+table #number{
+    color: green;
+}
+
+table #time{
+}
+
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #mapwarp {
+    position: absolute;
+    margin-right: -250px;
+    }
+
+.navbar-brand{
+    position: fixed;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 60px;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #777;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #777;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #wrapper.toggled #mapwrp {
+        position: relative;
+        margin-right: 0;
+    }
+}
