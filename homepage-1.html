@@ -50,15 +50,9 @@
 </div>
 </a>
             </div>
+            
 
                 <div class="picker">
-                 <!-- <div class="input-group col-md-offset-10  col-md-2 col-sm-offset-8 col-sm-4">   
-            <div class="input-group bootstrap-timepicker">
-            <input id="timepicker1" type="text" class="input-small">
-            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>-->
-
-       
-       
                 <div class="input-group date form_time col-md-offset-11  col-md-1 col-sm-offset-8 col-sm-4" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
                     <input class="form-control" id="timepicker1" size="7" type="text" value="" readonly>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
@@ -179,7 +173,13 @@
     });
     </script>
    <script type="text/javascript">
-            $('#timepicker1').timepicker();
+            $('#timepicker1').timepicker({
+              minuteStep: 1,
+              appendWidgetTo: 'body',
+              showSecond:true,
+              showMeridian:false,
+             
+            });
         </script>
 </body>
 </html>
