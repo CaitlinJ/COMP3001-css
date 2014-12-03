@@ -1,21 +1,22 @@
 img{
 margin-top: 5px;
+margin-bottom: -50px;
 }
-
 
 #mapwrap {
 width: 100%;
 top: 48px;
 position: fixed;
 bottom: 0;
-margin-left: 15px;
             }
 
-#timepicker{
+.picker{
    margin-bottom: -8px;
    margin-top: -40px;
 margin-right: 8px;
 }
+
+
 
 .list{
     margin-top: 10px;
